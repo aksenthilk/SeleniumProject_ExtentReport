@@ -2,12 +2,16 @@
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import junit.framework.Assert;
 
 public class ExtentReport {
 	//Author is Senthil
@@ -21,6 +25,11 @@ public class ExtentReport {
         ExtentReports extent = new ExtentReports();
         extent.attachReporter(report);
         ExtentTest logger = extent.createTest("LoginTest");
+        
+       System.setProperty("webdriver.chrome.driver", "G:\\chromedriver.exe");
+       WebDriver driver = new ChromeDriver();
+       driver.get("http://www.justanswer.com");
+       Assert.assertEquals("Ask an Expert & Get Answers to Your Questions - ASAP", driver.getTitle());
         logger.log(Status.INFO, "Login to Senthil");
         logger.log(Status.PASS, "Verified");
         
@@ -34,7 +43,7 @@ public class ExtentReport {
     	
 			logger2.addScreenCaptureFromPath("G:\\Elementmage.png");
 		
-    	
+    	driver.close();
     	extent.flush();
    }
 		

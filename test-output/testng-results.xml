@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3805" started-at="2018-06-17T06:26:19Z" finished-at="2018-06-17T06:26:23Z">
+  <suite name="Default suite" duration-ms="2021" started-at="2018-06-17T18:02:36Z" finished-at="2018-06-17T18:02:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3805" started-at="2018-06-17T06:26:19Z" finished-at="2018-06-17T06:26:23Z">
-      <class name="com.sel.sen.ExtentReport">
-        <test-method status="PASS" signature="Extent_Reporting()[pri:0, instance:com.sel.sen.ExtentReport@1b604f19]" name="Extent_Reporting" duration-ms="3588" started-at="2018-06-17T11:56:19Z" finished-at="2018-06-17T11:56:23Z">
+    <test name="Default test" duration-ms="2021" started-at="2018-06-17T18:02:36Z" finished-at="2018-06-17T18:02:38Z">
+      <class name="ExtentReport">
+        <test-method status="PASS" signature="Extent_Reporting()[pri:0, instance:ExtentReport@482f8f11]" name="Extent_Reporting" duration-ms="1934" started-at="2018-06-17T23:32:36Z" finished-at="2018-06-17T23:32:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Extent_Reporting -->
-      </class> <!-- com.sel.sen.ExtentReport -->
+      </class> <!-- ExtentReport -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
