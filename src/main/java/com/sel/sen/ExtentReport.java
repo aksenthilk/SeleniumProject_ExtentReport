@@ -10,6 +10,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class ExtentReport {
+	//Author is Senthil
 	//invoking TestNG from pom in Maven
 	//Download and Add the "maven-surefire-plugin" and "maven-compiler-plugin" inside the <build> tag in pom.xml
 	//Check if the "<suiteXmlFile>testng.xml</suiteXmlFile>" is present in Surefire plugin code
